@@ -1,0 +1,25 @@
+var arr = [ 1, 2, 3, 4, 5, 6, 7 ];
+document.write(arr);
+document.write("<br>");
+rotatecount(arr, 2);
+printA(arr,7);
+function rotatecount(arr, d){
+  for (let i = 0; i < d; i++) {
+    rotateArray(arr , 7);
+  }
+}
+
+function rotateArray(arr, n){
+  var temp = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i+1];
+  }
+  arr[n-1] = temp;
+}
+
+function printA(arr, n){
+for (let i = 0; i < n; i++) {
+  document.write(arr[i]+",");
+}
+}
+
