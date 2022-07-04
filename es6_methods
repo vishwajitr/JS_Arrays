@@ -1,0 +1,23 @@
+============>Map===========
+
+
+
+
+
+============Reduce===========
+
+
+array.reduce(function(accumulator, item, index, array) {
+  // Use `accumulator` and `item` 
+  // to calculate `updatedAccumulator`...
+  return updatedAccumulator;
+})
+
+const numbers = [2, 4, 6];
+const sum = numbers.reduce(function(sum, number) {
+  const updatedSum = sum + number;
+  return updatedSum;
+}, 0);
+console.log(sum)
+
+============////===========
